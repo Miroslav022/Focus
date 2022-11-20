@@ -982,6 +982,12 @@ footer .footer-container .navfooter ul li a {
   }
 }
 @media screen and (max-width: 470px) {
+  .container {
+    padding: 0px 20px;
+}
+  header .container .hero-container .hero-text {
+    width: 80%;
+}
   #project-section .proj-btns .proj-btn {
     padding: 15px 15px;
     font-size: 16px;
