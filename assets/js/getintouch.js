@@ -140,6 +140,7 @@ btnSignUp.addEventListener("click", function (e) {
     document.querySelector(".cb-flex").nextElementSibling.textContent = "You need to accept the Terms of Use & Privacy Policy "
   } else document.querySelector(".cb-flex").nextElementSibling.textContent = '';
 
+  proveriPassword ();
  
  
   for(let  i =0; i<errors.length; i++) {
