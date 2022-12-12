@@ -312,6 +312,11 @@ header {
               }
             }
           }
+          .content-testimonial {
+            p {
+              max-width: 300px;
+            }
+          }
         }
       }
     }
@@ -1101,6 +1106,9 @@ footer {
   .sign-up-ct .right-block .form-block .su-heading {
     font-size: 34px;
   }
+  .container .testimonial-section #testimonial .testimonial-container .card {
+    margin: 0px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -1164,9 +1172,7 @@ footer {
   .container .testimonial-section #t-head .prev-next-btn {
     top: 15%;
   }
-  .container .testimonial-section #testimonial .testimonial-container .card {
-    text-align: center;
-  }
+ 
 
   .container
     .testimonial-section
@@ -1184,8 +1190,7 @@ footer {
     .card
     .card-imgName {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+ 
   }
 
   .container
