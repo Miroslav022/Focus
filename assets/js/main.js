@@ -87,12 +87,12 @@ let widthItem = document.querySelector(".card").offsetWidth;
 next.addEventListener("click", (e) => {
   e.preventDefault();
 
-  testimonial.scrollLeft += widthItem;
+  testimonial.scrollLeft += widthItem ;
 });
 
 back.addEventListener("click", (e) => {
   e.preventDefault();
-  testimonial.scrollLeft -= widthItem;
+  testimonial.scrollLeft -= widthItem ;
 });
 
 //Open popUp
@@ -121,13 +121,39 @@ addTestimonial.addEventListener("click", (e) => {
   clientName.push(nameField.value);
   clientBusiness.push(positionField.value);
   contentTestimonial.push(messageField.value);
-  testimonialCt.innerHTML = "";
+  testimonialCt.innerHTML = ""; 
   loadTestimonial();
   nameField.value = "";
   positionField.value = "";
   messageField.value = "";
   popUpTestimonial.classList.remove("popUpOpen");
 });
+
+// Benefits
+const allbenefit = document.querySelector('.allBenefit');
+let benefitHeading = ['Be on the top', 'Beauty design', 'Thought'];
+let benefitDesc = [`Our SEO strategy will push your website on the top and it's gonna be more accessible to people`, `Developing stunning one-of-a-kind digital design that catches people’s eye and brings your brand to life online.`, `As a web design agency, we love to deliver meaningful and intuitive user experiences that build trust with your target audience.`]
+
+for(let x in benefitHeading) {
+  allbenefit.innerHTML+= `<div class="benefit">
+                            <div class="benefit-name">
+                              <img
+                                src="assets/img/internet1.png"
+                                alt="Benefit-internet-logo"
+                              />
+                              <h3 class="benefit-heading-name">${benefitHeading[x]}</h3>
+                            </div>
+                            <p class="benefit-p">
+                              ${benefitDesc[x]}
+                            </p>
+                          </div>`
+}
+
+
+//wwd
+
+const wwd = document.querySelector('.wwd-container');
+
 
 //Project
 const projectBtns = document.querySelectorAll(".proj-btn");
