@@ -45,14 +45,11 @@ if (wLoaction.includes("index.html")) {
   //INFORMATION
   const clientName = ["John", "Marko", "Marty", "Mirko"];
   const contentTestimonial = [
-    `"Always reliable and fast, I can always count on you guys to get
+   `"Always reliable and fast, I can always count on you guys to get
     requests done. Thank you!"`,
-    `"Always reliable and fast, I can always count on you guys to get
-    requests done. Thank you!"`,
-    `"Always reliable and fast, I can always count on you guys to get
-    requests done. Thank you!"`,
-    `"Always reliable and fast, I can always count on you guys to get
-    requests done. Thank you!"`,
+    `"Using their services for over a year now, their support is always polite and helpful"`,
+    `"Hesitant at first, but after they created new website for my business, sales tripled. More than happy with them."`,
+    `"Great value website for your money. Greetings from Idaho"`,
   ];
   const imgClient = [
     "avatar1.png",
