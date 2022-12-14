@@ -924,6 +924,11 @@ footer .footer-container .navfooter ul li a {
   font-size: 14px;
 }
 
+.errorJoin {
+  color: #ff0000;
+}
+
+
 .error {
   color: #ff0000;
   margin-top: 5px;
