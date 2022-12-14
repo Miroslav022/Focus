@@ -142,12 +142,12 @@ if (wLoaction.includes("index.html")) {
   let wwdIcon = ["item1.png", "brandingItem.png", "seoitem.png"];
   let wwdContent = [
     `Making beautiful and functional website for your business,
-        also we provide upgrade and administrating your website`,
+        also we provide upgrades and administration for your website.`,
     `Delivering effective digital strategies & eye-catching online
         marketing campaigns that earn attention, spark emotion &
         increase conversions.`,
     `We do offer result driven SEO services. We can rank your
-        Keyword Local-international Market`,
+        Keyword Local-international Market.`,
   ];
   let wwdTag1 = [
     "WEBSITE DESIGN",
