@@ -292,7 +292,7 @@ $(document).ready(function(){
     }, 1000);
 
     //MODAL JQUERY
-    $(document).ready(function () {
+   
       $(".popupJoin").hide();
       $("#joinus").click(function (e) {
         e.preventDefault();
@@ -358,7 +358,7 @@ $(document).ready(function(){
         $.scrollTo(0, "slow");
         return false;
       });
-    });
+    
   } else if (wLoaction.includes("getintouch.html")) {
     //GET IN TOUCH
 
