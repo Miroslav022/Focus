@@ -1,4 +1,3 @@
-window.addEventListener('load',function(){
 function loadNav() {
   let navLink = ["Home", "About us", "Projects", "Author"];
   let links = ["index.html", "#wwa", "#project-section", "author.html"];
@@ -352,10 +351,7 @@ if (wLoaction.includes("Focus")) {
       }
     });
 
-    // $(".backToTop a").click(function () {
-    //   $.scrollTo(0, "slow");
-    //   return false;
-    // });
+   
   });
 } else if (wLoaction.includes("getintouch.html")) {
   //GET IN TOUCH
@@ -523,5 +519,3 @@ if (wLoaction.includes("Focus")) {
 } else if (wLoaction.includes("author.html")) {
   loadNav();
 }
-
-})
