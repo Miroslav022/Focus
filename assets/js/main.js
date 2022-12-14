@@ -516,6 +516,4 @@ if (wLoaction.includes("Focus")) {
       }
     }
   });
-} else if (wLoaction.includes("author.html")) {
-  loadNav();
 }
