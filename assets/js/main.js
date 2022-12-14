@@ -1,4 +1,3 @@
-window.addEventListener('load', function(){
 function loadNav() {
   let navLink = ["Home", "About us", "Projects", "Author"];
   let links = ["index.html", "#wwa", "#project-section", "author.html"];
@@ -39,7 +38,7 @@ function loadNav() {
   });
 }
 let wLoaction = window.location.pathname;
-if (wLoaction == "/" || wLoaction.includes("Focus")) {
+if (wLoaction.includes("Focus")) {
   loadNav();
   let indexBtn = document.querySelector(".navBar ul li a[href='index.html']");
   indexBtn.setAttribute("href", "#home");
@@ -523,6 +522,3 @@ if (wLoaction == "/" || wLoaction.includes("Focus")) {
 } else if (wLoaction.includes("author.html")) {
   loadNav();
 }
-
-
-})
