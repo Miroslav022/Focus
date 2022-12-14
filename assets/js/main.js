@@ -351,7 +351,10 @@ if (wLoaction.includes("Focus")) {
       }
     });
 
-   
+    // $(".backToTop a").click(function () {
+    //   $.scrollTo(0, "slow");
+    //   return false;
+    // });
   });
 } else if (wLoaction.includes("getintouch.html")) {
   //GET IN TOUCH
