@@ -1,5 +1,5 @@
 let wLoaction = window.location.pathname;
-if (wLoaction.includes("index.html") || wLocation.includes('/Focus/')) {
+if (wLoaction.includes("index.html")) {
   let navLink = ["Home", "About us", "Projects", "Author"];
   let links = ["index.html", "#wwa", "#project-section", "author.html"];
   let navBar = document.querySelector(".navBar");
