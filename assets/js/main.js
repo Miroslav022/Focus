@@ -1,4 +1,5 @@
-function loadNav() {
+let wLoaction = window.location.pathname;
+if (wLoaction.includes("index.html")) {
   let navLink = ["Home", "About us", "Projects", "Author"];
   let links = ["index.html", "#wwa", "#project-section", "author.html"];
   let navBar = document.querySelector(".navBar");
@@ -36,10 +37,6 @@ function loadNav() {
       sideMenu.classList.toggle("none");
     }
   });
-}
-let wLoaction = window.location.pathname;
-if (wLoaction.includes("Focus")) {
-  loadNav();
   let indexBtn = document.querySelector(".navBar ul li a[href='index.html']");
   indexBtn.setAttribute("href", "#home");
 
@@ -350,11 +347,6 @@ if (wLoaction.includes("Focus")) {
         }
       }
     });
-
-    // $(".backToTop a").click(function () {
-    //   $.scrollTo(0, "slow");
-    //   return false;
-    // });
   });
 } else if (wLoaction.includes("getintouch.html")) {
   //GET IN TOUCH
