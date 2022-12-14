@@ -242,11 +242,11 @@ if (wLoaction.includes("index.html")) {
   const processCt = document.querySelector(".process-content");
   let processNum = ["1", "2", "3"];
   let procesImg = ["meeting.png", "illustration.png", "publish.png"];
-  let procesHeading = ["Meeting", "Design/Develop", "Publish on internet"];
+  let procesHeading = ["Meeting", "Design/Develop", "Publish to the internet"];
   let procesContent = [
-    `We trying understand your problem and find best solution for that.`,
+    `We're trying to understand your problem and find the best solution for it.`,
     `We Design your website and after that comes coding.`,
-    `After all configuration, finally your site is ready for WWW`,
+    `After all configuration, finally your site is ready for the WWW`,
   ];
 
   for (let i in procesImg) {
