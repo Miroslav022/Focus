@@ -284,7 +284,66 @@ let interval = setInterval(function () {
 }, 1000);
 
 //MODAL JQUERY
+$(document).ready(function () {
+  $(".popupJoin").hide();
+  $("#joinus").click(function (e) {
+    e.preventDefault();
+    $(".popupJoin").show();
+  });
+  $("#closeModal").click(function (e) {
+    e.preventDefault();
+    $(".popupJoin").hide();
+  });
+  let fullname = /^[A-Z][a-z]{2,15}$/;
+  let mailReg = /^[A-z0-9-\.]{3,30}@[a-z]{2,8}\.(com|rs)$/;
+  $("#joinForm :input").blur(function () {
+    if ($(this).val().length == 0) {
+      $(this).addClass("errorInput");
+      $(this).next().text("Please fill up empty field");
+    } else {
+      $(this).removeClass("errorInput");
+      $(this).next().text(``);
+    }
+  });
 
+  $("#sub").click(function (e) {
+    e.preventDefault();
+
+    if (!fullname.test($("#FullName").val())) {
+      $("#FullName").next().text("Incorect name, example:(Miroslav Jandric)");
+      $("#FullName").addClass("errorInput");
+    } else {
+      $("#FullName").next().text(``);
+      $("#FullName").removeClass("errorInput");
+    }
+    if (!mailReg.test($("#mail").val())) {
+      $("#mail").next().text(`Email address must end with 'com/rs'`);
+      $("#mail").addClass("errorInput");
+    } else {
+      $("#mail").next().text(``);
+      $("#mail").removeClass("errorInput");
+    }
+    if ($("#mess").val() == "") {
+      $("#mess").next().text(`Please enter some message`);
+      $("#mess").addClass("errorInput");
+    } else {
+      $("#mess").next().text(``);
+      $("#mess").removeClass("errorInput");
+    }
+
+    for (let i = 0; i < $(".errorJoin").length; i++) {
+      if ($(".errorJoin").text() != "") {
+        $("#successfulJoin").html("");
+        $("#successfulJoin").removeClass("scsJoin");
+        break;
+      } else {
+        $("#successfulJoin").addClass("scsJoin");
+
+        $("#successfulJoin").html("Successful");
+      }
+    }
+  });
+  
 
   $(".backToTop a").click(function () {
     $.scrollTo(0, "slow");
