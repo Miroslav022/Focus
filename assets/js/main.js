@@ -38,7 +38,7 @@ function loadNav() {
   });
 }
 let wLoaction = window.location.pathname;
-if (wLoaction == "/" || wLoaction.includes("index.html")) {
+if (wLoaction == "/" || wLoaction.includes("Focus")) {
   loadNav();
   let indexBtn = document.querySelector(".navBar ul li a[href='index.html']");
   indexBtn.setAttribute("href", "#home");
