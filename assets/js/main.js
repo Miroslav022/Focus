@@ -1,5 +1,5 @@
-window.addEventListener("load", function () {
-  function loadNav() {
+$(document).ready(function(){
+ function loadNav() {
     let navLink = ["Home", "About us", "Projects", "Author"];
     let links = ["index.html", "#wwa", "#project-section", "author.html"];
     let navBar = document.querySelector(".navBar");
@@ -531,3 +531,5 @@ window.addEventListener("load", function () {
   }
   //loadNavBar
 });
+
+ 
