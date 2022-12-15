@@ -304,7 +304,7 @@ if (wLoaction.includes("index.html")) {
   for (let i in footerlink1) {
     footer1.innerHTML += `
     <li>
-      <a href="${footerlink1[i]}"
+      <a href="${footerlink1[i]}" target="_blank"
         ><img src="assets/img/${footerlink2[i]}" alt="${footerlink1[i]}"
       /></a>
     </li>
