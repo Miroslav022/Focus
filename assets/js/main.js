@@ -298,7 +298,7 @@ if (wLoaction.includes("index.html")) {
     "document.png",
     "instagram.png",
   ];
-  let footerlink2Val = ["Home", "About us", "author", "Meeting"];
+  let footerlink2Val = ["Home", "About us", "Author", "Meeting"];
   let footerlink2loc = ["index.html", "#wwa", "author.html", "getintouch.html"];
 
   for (let i in footerlink1) {
