@@ -442,6 +442,9 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        .errorJoin {
+         color: #ff0000;
+         }
         label {
           display: block;
           text-align: center;
@@ -993,9 +996,7 @@ footer {
   }
 }
 
-.errorJoin {
-  color: #ff0000;
-}
+
 
 .error {
   color: #ff0000;
