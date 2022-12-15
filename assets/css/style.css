@@ -410,6 +410,10 @@ header {
   flex-direction: column;
   align-items: center;
 }
+.popupJoin .joinBlock form .unpBlokJoin .errorJoin {
+  color: #ff0000;
+}
+
 .popupJoin .joinBlock form .inpBlokJoin label {
   display: block;
   text-align: center;
