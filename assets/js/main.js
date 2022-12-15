@@ -283,7 +283,44 @@ if (wLoaction.includes("index.html")) {
       counterTag.innerHTML = `Concourse is over`;
     }
   }, 1000);
+//Footer
+  const footer1 = document.querySelector(".ft1 ul");
+  const footer2 = document.querySelector(".ft2 ul");
+  let footerlink1 = [
+    "sitemap.xml",
+    "robots.txt",
+    "dokumentacija.pdf",
+    "https://www.instagram.com/m.jandricc/",
+  ];
+  let footerlink2 = [
+    "sitemap.png",
+    "robot.png",
+    "document.png",
+    "instagram.png",
+  ];
+  let footerlink2Val = ["Home", "About us", "author", "Meeting"];
+  let footerlink2loc = ["index.html", "#wwa", "author.html", "getintouch.html"];
 
+  for (let i in footerlink1) {
+    footer1.innerHTML += `
+    <li>
+      <a href="${footerlink1[i]}"
+        ><img src="assets/img/${footerlink2[i]}" alt="${footerlink1[i]}"
+      /></a>
+    </li>
+    
+  `;
+  }
+
+  for (let i in footerlink2Val) {
+    footer2.innerHTML += `
+    <li><a href="${footerlink2loc[i]}">${footerlink2Val[i]}</a></li>
+    
+  `;
+  }
+  
+  
+  
   //MODAL JQUERY
   $(document).ready(function () {
     $(".popupJoin").hide();
