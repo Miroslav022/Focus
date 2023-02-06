@@ -1,7 +1,7 @@
 let wLoaction = window.location.pathname;
 if (wLoaction.includes("index.html")) {
-  let navLink = ["Home", "About us", "Projects", "Author"];
-  let links = ["index.html", "#wwa", "#project-section", "author.html"];
+  let navLink = ["Home", "About us", "Projects"];
+  let links = ["index.html", "#wwa", "#project-section"];
   let navBar = document.querySelector(".navBar");
   let navMenu;
   navMenu = "<ul>";
